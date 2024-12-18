@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confraternita Misericordia di Santa Marinella ODV</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:wght@400;700&display=swap" rel="stylesheet">
+    
+    <style>
+         body {
+        font-family: 'Libre Bodoni', serif;
+        font-weight: 450; /* Bold weight */
+    }
+
+    /* Optional: Fine-tune specific elements if needed */
+    .text-2xl, .text-3xl, .text-4xl, .text-5xl {
+        font-family: 'Libre Bodoni', serif;
+        font-weight: 700;
+    }
+
+    /* Ensure headings and important text maintain the bold Bodoni style */
+    h1, h2, h3, .font-bold {
+        font-family: 'Libre Bodoni', serif;
+        font-weight: 700;
+    }
+        /* Aggiunto scroll behavior fluido */
+        html {
+            scroll-behavior: smooth;
+        }
+        .bg-blu {
+            background-color: #60b3f9;
+        }
+        .bg-giallo {
+            background-color: #F4F155;
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            nav .container {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            nav img {
+                max-width: 200px;
+                margin: 10px auto;
+            }
+            
+            .nav-links {
+                flex-direction: column;
+                gap: 10px;
+            }
+            
+            #servizi {
+                grid-template-columns: 1fr;
+            }
+            
+            footer .container {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            
+            footer .container > div {
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <nav class="bg-gray-800 text-white p-4 shadow-md">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+            <!-- Logo a sinistra -->
+            <div class="flex-shrink-0 mb-4 md:mb-0">
+                <img src="logo.png" alt="Logo Misericordia" class="h-48 w-48 rounded-full mx-auto md:mx-0">
+            </div>
+            
+            <!-- Titolo e Menù al centro -->
+            <div class="flex flex-col items-center">
+                <div class="text-2xl md:text-5xl font-bold text-center">Confraternita</div>
+                <div class="text-2xl md:text-2xl font-bold text-center">Misericordia di Santa Marinella ODV</div>
+            </div>
+            
+            <!-- Logo a destra -->
+            <div class="flex-shrink-0 mt-4 md:mt-0">
+                <img src="comune.png" alt="Logo Comune" class="h-48 w-35 mx-auto md:mx-0">
+            </div>
+        </div>
+    </nav>
+    <div class="bg-gray-700 text-white py-2">
+        <div class="container mx-auto flex flex-wrap justify-center items-center gap-2">
+            
+            <a href="#servizi" class="inline-block bg-gray-600 hover:bg-gray-700 px-3 py-1 rounded-full text-sm transition duration-300 flex items-center">
+                <i class="fas fa-briefcase mr-2"></i>Servizi
+            </a>
+
+
+            <a href="#volontari" class="inline-block bg-gray-600 hover:bg-gray-700 px-3 py-1 rounded-full text-sm transition duration-300 flex items-center">
+                <i class="fas fa-handshake-angle mr-2"></i>Diventa Volontario
+            </a>
+
+
+            <a href="#donazioni" class="inline-block bg-gray-600 hover:bg-gray-700 px-3 py-1 rounded-full text-sm transition duration-300 flex items-center">
+                <i class="fas fa-hand-holding-dollar mr-2"></i>5x1000
+            </a>
+
+            
+            <a href="pagina-contatti.html" class="inline-block bg-gray-600 hover:bg-gray-700 px-3 py-1 rounded-full text-sm transition duration-300 flex items-center">
+                <i class="fas fa-envelope mr-2"></i>Contatti
+            </a>
+
+            <a href="pagina-social.html" class="inline-block bg-gray-600 hover:bg-gray-700 px-3 py-1 rounded-full text-sm transition duration-300 flex items-center">
+                <i class="fas fa-share-alt mr-2"></i>Social
+            </a>
+
+            <a href="https://www.comune.santamarinella.rm.it" class="inline-block bg-gray-600 hover:bg-gray-700 px-3 py-1 rounded-full text-sm transition duration-300 flex items-center">
+                <i class="fas fa-city mr-2"></i>Comune di Santa Marinella
+            </a>
+            
+            <a href="https://www.ares118.it" class="inline-block bg-gray-600 hover:bg-gray-700 px-3 py-1 rounded-full text-sm transition duration-300 flex items-center">
+                <i class="fas fa-ambulance mr-2"></i>Ares118
+            </a>
+            
+            <a href="https://www.salutelazio.it/pronto-soccorso" class="inline-block bg-gray-600 hover:bg-gray-700 px-3 py-1 rounded-full text-sm transition duration-300 flex items-center">
+                <i class="fas fa-hospital mr-2"></i>PS in Tempo Reale
+            </a>
+
+            <a href="https://www.misericordie.it" class="inline-block bg-gray-600 hover:bg-gray-700 px-3 py-1 rounded-full text-sm transition duration-300 flex items-center">
+                <i class="fas fa-bookmark mr-2"></i>Misericordie d'Italia
+            </a>
+        </div>
+    </div>
+
+    <main id="servizi" class="container mx-auto my-12 grid md:grid-cols-3 gap-8">
+        
+        <div class="bg-white p-6 rounded-lg shadow-md text-center">
+            <i class="fas mb-4"><img src="ss.png" alt="Servizio Civile Nazionale" class="h-20 w-20 rounded-full mx-auto"></i>
+            <h2 class="text-2xl font-semibold mb-3">Servizi Sociali</h2>
+            <p>Servizi ai bambini diversamente abili, famiglie bisognose.</p>
+        </div>
+
+        <div class="bg-white p-6 rounded-lg shadow-md text-center">
+            <i class="fas mb-4"><img src="ti.png" alt="Servizio Civile Nazionale" class="h-20 w-20 rounded-full mx-auto"></i>
+            <h2 class="text-2xl font-semibold mb-3">Trasporti Infermi</h2>
+            <p>Nazionali e Internazionali H24 anche con personale medico o infermiersitico.</p>
+        </div>
+
+        <div class="bg-white p-6 rounded-lg shadow-md text-center">
+            <i class="fas mb-4"><img src="112b.png" alt="Servizio Civile Nazionale" class="h-20 w-20 rounded-full mx-auto"></i>
+            <h2 class="text-2xl font-semibold mb-3">Servizi di Emergenza 118</h2>
+            <p>Interventi in emergenza e urgenza in convenzione con Ares 118.</p>
+        </div>
+
+        <div class="bg-white p-6 rounded-lg shadow-md text-center">
+            <i class="fas mb-4"><img src="pcn.png" alt="Protezione Civile Nazionale" class="h-20 w-20 rounded-full mx-auto"></i>
+            <h2 class="text-2xl font-semibold mb-3">Protezione Civile</h2>
+            <p>Persone normali che fanno cose eccezionali! Entra a farne parte!</p>
+        </div>
+
+        <div class="bg-white p-6 rounded-lg shadow-md text-center">
+            <i class="fas mb-4"><img src="scn.jpeg" alt="Servizio Civile Nazionale" class="h-20 w-20 rounded-full mx-auto"></i>
+            <h2 class="text-2xl font-semibold mb-3">Servizio Civile Nazionale</h2>
+            <p>Fai la scelta giusta! Svolgi 1 anno di Servizio Civile Nazionale con noi.</p>
+        </div>
+
+        <div class="bg-white p-6 rounded-lg shadow-md text-center">
+            <i class="fas mb-4"><img src="coro.png" alt="Servizio Civile Nazionale" class="h-20 w-20 rounded-full mx-auto"></i>
+            <h2 class="text-2xl font-semibold mb-3">Servizio di Intrattenimento</h2>
+            <p>Eventi sociali, gruppo corale e tanto altro!</p>
+        </div>
+    </main>
+
+    <header id="volontari" class="bg-cover bg-center h-[300px] flex items-center" style="background-image: url('corso.png');">
+        <div class="container mx-auto text-center text-white bg-black bg-opacity-50 p-8 rounded-lg">
+            <h1 class="text-2xl md:text-4xl font-bold mb-4">Iscriviti al nuovo corso Soccorritori 2025</h1>
+            <p class="text-base md:text-xl">I nostri soccorritori sono operativi 24/24h, 365 giorni all'anno per prestare servizio alla comunità!</p>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSe9iDr4hwvVQn91LOhzixQxAzHzdFbVYSvV5eSHQ9ybrjmS3g/viewform?usp=header" class="mt-6 inline-block bg-giallo hover:bg-giallo text-black px-6 py-3 rounded-full">Diventa Volontario</a>
+        </div>
+    </header>
+
+    <section id="donazioni" class="bg-blue-50 py-16">
+        <div class="container mx-auto text-center px-4">
+            <h2 class="text-2xl md:text-3xl font-bold mb-8">Dona il tuo 5x1000 alla Misericordia di Santa Marinella</h2>
+            <p class="text-base md:text-xl mb-8">Nella tua denuncia dei redditi inserisci il nostro codice fiscale e firma nel riquadro dedicato al
+                "Sostegno del volontariato e delle altre organizzazioni non lucrative di utilità sociale ..." </p>
+            <div class="flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-4">
+                <p class="bg-blu text-white px-6 py-3 rounded-full">91023240582</p>
+                <a href="https://italianonprofit.it/risorse/definizioni/assegnare-5x1000/" class="border-2 border-blue-600 text-blue-600 px-6 py-3 rounded-full hover:bg-blue-100">Scopri Come</a>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contatti" class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto grid md:grid-cols-3 gap-8 items-center px-4">
+            <!-- Contatti -->
+            <div class="text-center md:text-left">
+                <h3 class="text-xl font-semibold">Contatti</h3>
+                <p>Tel: 0766 530050</p>
+                <p>Via Rucellai 1, Santa Marinella 00058 (RM)</p>             
+                <a href="mailto:segreteria@misericordiasantamarinella.it">segreteria@misericordiasantamarinella.it</a>
+                <p>C.F. 91023240582</p>
+            </div>
+            
+            <!-- Logo del Comune al centro -->
+            <div class="flex justify-center">
+                <img src="logo.png" class="h-48 w-48 rounded-full">
+            </div> 
+            
+            <!-- Logo 112 spostato più a destra -->
+            <div class="flex justify-center md:justify-end">
+                <img src="112.png" class="h-48 w-70">
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
