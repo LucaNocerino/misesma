@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media - Misericordia Santa Marinella</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        .bg-misericordia {
+            background-color: #60b3f9;
+        }
+        .social-gradient-facebook {
+            background: linear-gradient(135deg, #3b5998, #4a6fc3);
+        }
+        .social-gradient-instagram {
+            background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+        }
+        .social-gradient-tiktok {
+            background: linear-gradient(135deg, #000000, #2a2a2a);
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            nav .container {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .social-grid, .posts-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <nav class="bg-misericordia text-white p-4 shadow-md fixed w-full top-0 z-50">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+            <div class="flex items-center mb-4 md:mb-0">
+                <img src="logo.png" alt="Logo Misericordia" class="h-12 w-12 mr-4 rounded-full">
+                <div class="text-xl md:text-2xl font-bold">Misericordia Santa Marinella</div>
+            </div>
+            <div class="space-x-4">
+                <a href="index.html" class="hover:text-blue-200">Home</a>
+                <a href="#" class="hover:text-blue-200">Social</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mx-auto mt-24 px-4">
+        <h1 class="text-2xl md:text-4xl font-bold mb-12 text-center">I Nostri Social Media</h1>
+
+        <div class="grid social-grid md:grid-cols-3 gap-8">
+            <!-- Facebook -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-300 hover:scale-105">
+                <div class="social-gradient-facebook p-6 text-center text-white">
+                    <i class="fab fa-facebook-f text-4xl md:text-6xl mb-4"></i>
+                    <h2 class="text-2xl md:text-3xl font-bold">Facebook</h2>
+                </div>
+                <div class="p-6">
+                    <p class="mb-4 text-sm md:text-base">Seguici su Facebook per rimanere aggiornato sulle nostre attività, iniziative e progetti di volontariato.</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-gray-600">Followers: 1.9K</span>
+                        <a href="https://www.facebook.com/misericordie.org" class="bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700">
+                            Segui
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Instagram -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-300 hover:scale-105">
+                <div class="social-gradient-instagram p-6 text-center text-white">
+                    <i class="fab fa-instagram text-4xl md:text-6xl mb-4"></i>
+                    <h2 class="text-2xl md:text-3xl font-bold">Instagram</h2>
+                </div>
+                <div class="p-6">
+                    <p class="mb-4 text-sm md:text-base">Scopri i nostri momenti più belli, le storie dei volontari e le nostre attività attraverso immagini e video.</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-gray-600">Followers: 727</span>
+                        <a href="https://www.instagram.com/misericordia_sma/" class="bg-pink-600 text-white px-4 py-2 rounded-full hover:bg-pink-700">
+                            Segui
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TikTok -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-300 hover:scale-105">
+                <div class="social-gradient-tiktok p-6 text-center text-white">
+                    <i class="fab fa-tiktok text-4xl md:text-6xl mb-4"></i>
+                    <h2 class="text-2xl md:text-3xl font-bold">TikTok</h2>
+                </div>
+                <div class="p-6">
+                    <p class="mb-4 text-sm md:text-base">Video creativi, sfide di volontariato e momenti divertenti per raccontare la nostra missione.</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-gray-600">Followers: 2</span>
+                        <a href="https://www.tiktok.com/@misericordia_sma" class="bg-black text-white px-4 py-2 rounded-full hover:bg-gray-800">
+                            Segui
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mx-auto my-12 px-4">
+        <h2 class="text-2xl md:text-3xl font-bold text-center mb-8">I Nostri Ultimi Post</h2>
+        <div class="grid posts-grid md:grid-cols-3 gap-6">
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="staytuned.png" alt="Post Social" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h3 class="font-bold mb-2 text-sm md:text-base">Stay Tuned</h3>
+                    <p class="text-gray-600 text-xs md:text-sm">Ci stiamo lavorando. Rimani sintonizzato!</p>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="staytuned.png" alt="Post Social" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h3 class="font-bold mb-2 text-sm md:text-base">Stay Tune
